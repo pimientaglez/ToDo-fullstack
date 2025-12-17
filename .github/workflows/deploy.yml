@@ -7,6 +7,7 @@ on:
       - 'todo-api/**'
       - 'todo-frontend/**'
       - 'docker-compose.yml'
+      - '.github/workflows/**'
 
 jobs:
   build-api:
