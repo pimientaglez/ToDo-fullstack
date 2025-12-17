@@ -67,6 +67,7 @@ jobs:
       - name: Deploy
         run: |
           cd /home/pimientaglez/Code/ToDo-Project
+          docker compose down
           docker compose pull
-          docker compose up -d --force-recreate
+          docker compose up -d
           docker image prune -f
